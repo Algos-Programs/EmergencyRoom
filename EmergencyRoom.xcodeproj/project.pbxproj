@@ -32,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		180CA86917C0F25400459DBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = PushNotificationManager;
+		};
 		18BC92F117C0DE81006F82DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18BC92B017C0DE80006F82DB /* Project object */;
@@ -39,16 +46,10 @@
 			remoteGlobalIDString = 18BC92B717C0DE80006F82DB;
 			remoteInfo = EmergencyRoom;
 		};
-		18BC9DDA17C0DFAD006F82DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = PushNotificationManager;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushNotificationManager.xcodeproj; path = "push-notifications-sdk-master/SDK/iPhone-ARC/PushNotificationManager.xcodeproj"; sourceTree = "<group>"; };
 		18BC92B817C0DE80006F82DB /* EmergencyRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BC92BB17C0DE80006F82DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18BC92BD17C0DE80006F82DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,7 +79,6 @@
 		18BC92F717C0DE81006F82DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18BC92F917C0DE81006F82DB /* EmergencyRoomTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergencyRoomTests.h; sourceTree = "<group>"; };
 		18BC92FA17C0DE81006F82DB /* EmergencyRoomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmergencyRoomTests.m; sourceTree = "<group>"; };
-		18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushNotificationManager.xcodeproj; path = "../../../Librerie/push-notifications-sdk-master/SDK/iPhone/PushNotificationManager.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CA86617C0F25300459DBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180CA86A17C0F25400459DBF /* libPushNotificationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18BC92AF17C0DE80006F82DB = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +146,7 @@
 		18BC92C117C0DE80006F82DB /* EmergencyRoom */ = {
 			isa = PBXGroup;
 			children = (
-				18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */,
+				180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */,
 				18BC92CA17C0DE80006F82DB /* AppDelegate.h */,
 				18BC92CB17C0DE80006F82DB /* AppDelegate.m */,
 				18BC92D317C0DE80006F82DB /* MainStoryboard_iPhone.storyboard */,
@@ -187,14 +195,6 @@
 				18BC92F617C0DE81006F82DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		18BC9DD717C0DFAC006F82DB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18BC9DDB17C0DFAD006F82DB /* libPushNotificationManager.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,14 +251,18 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
+				de,
+				es,
+				se,
 			);
 			mainGroup = 18BC92AF17C0DE80006F82DB;
 			productRefGroup = 18BC92B917C0DE80006F82DB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 18BC9DD717C0DFAC006F82DB /* Products */;
-					ProjectRef = 18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */;
+					ProductGroup = 180CA86617C0F25300459DBF /* Products */;
+					ProjectRef = 180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -270,11 +274,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		18BC9DDB17C0DFAD006F82DB /* libPushNotificationManager.a */ = {
+		180CA86A17C0F25400459DBF /* libPushNotificationManager.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libPushNotificationManager.a;
-			remoteRef = 18BC9DDA17C0DFAD006F82DB /* PBXContainerItemProxy */;
+			remoteRef = 180CA86917C0F25400459DBF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -414,8 +418,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "push-notifications-sdk-master/SDK/iPhone-ARC/Classes/PushNotificationManager";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,8 +445,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "push-notifications-sdk-master/SDK/iPhone-ARC/Classes/PushNotificationManager";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -453,6 +461,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmergencyRoom/EmergencyRoom-Prefix.pch";
 				INFOPLIST_FILE = "EmergencyRoom/EmergencyRoom-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/push-notifications-sdk-master/SDK Sample Projects/Marmalade/s3ePushWoosh/lib/iphone\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +476,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmergencyRoom/EmergencyRoom-Prefix.pch";
 				INFOPLIST_FILE = "EmergencyRoom/EmergencyRoom-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/push-notifications-sdk-master/SDK Sample Projects/Marmalade/s3ePushWoosh/lib/iphone\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
