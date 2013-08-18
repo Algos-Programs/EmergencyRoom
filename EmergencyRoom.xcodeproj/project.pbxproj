@@ -39,6 +39,13 @@
 			remoteGlobalIDString = 18BC92B717C0DE80006F82DB;
 			remoteInfo = EmergencyRoom;
 		};
+		18BC9DDA17C0DFAD006F82DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = PushNotificationManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +78,7 @@
 		18BC92F717C0DE81006F82DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18BC92F917C0DE81006F82DB /* EmergencyRoomTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergencyRoomTests.h; sourceTree = "<group>"; };
 		18BC92FA17C0DE81006F82DB /* EmergencyRoomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmergencyRoomTests.m; sourceTree = "<group>"; };
+		18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushNotificationManager.xcodeproj; path = "../../../Librerie/push-notifications-sdk-master/SDK/iPhone/PushNotificationManager.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		18BC92C117C0DE80006F82DB /* EmergencyRoom */ = {
 			isa = PBXGroup;
 			children = (
+				18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */,
 				18BC92CA17C0DE80006F82DB /* AppDelegate.h */,
 				18BC92CB17C0DE80006F82DB /* AppDelegate.m */,
 				18BC92D317C0DE80006F82DB /* MainStoryboard_iPhone.storyboard */,
@@ -178,6 +187,14 @@
 				18BC92F617C0DE81006F82DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BC9DD717C0DFAC006F82DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BC9DDB17C0DFAD006F82DB /* libPushNotificationManager.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +255,12 @@
 			mainGroup = 18BC92AF17C0DE80006F82DB;
 			productRefGroup = 18BC92B917C0DE80006F82DB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18BC9DD717C0DFAC006F82DB /* Products */;
+					ProjectRef = 18BC9DD617C0DFAC006F82DB /* PushNotificationManager.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18BC92B717C0DE80006F82DB /* EmergencyRoom */,
@@ -245,6 +268,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18BC9DDB17C0DFAD006F82DB /* libPushNotificationManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPushNotificationManager.a;
+			remoteRef = 18BC9DDA17C0DFAD006F82DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18BC92B617C0DE80006F82DB /* Resources */ = {
@@ -489,6 +522,7 @@
 				18BC930017C0DE81006F82DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18BC930117C0DE81006F82DB /* Build configuration list for PBXNativeTarget "EmergencyRoomTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +531,7 @@
 				18BC930317C0DE81006F82DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
