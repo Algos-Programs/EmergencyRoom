@@ -32,13 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		180CA86917C0F25400459DBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = PushNotificationManager;
-		};
 		18BC92F117C0DE81006F82DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18BC92B017C0DE80006F82DB /* Project object */;
@@ -49,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PushNotificationManager.xcodeproj; path = "push-notifications-sdk-master/SDK/iPhone-ARC/PushNotificationManager.xcodeproj"; sourceTree = "<group>"; };
 		18BC92B817C0DE80006F82DB /* EmergencyRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BC92BB17C0DE80006F82DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18BC92BD17C0DE80006F82DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,14 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		180CA86617C0F25300459DBF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				180CA86A17C0F25400459DBF /* libPushNotificationManager.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		18BC92AF17C0DE80006F82DB = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +130,6 @@
 		18BC92C117C0DE80006F82DB /* EmergencyRoom */ = {
 			isa = PBXGroup;
 			children = (
-				180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */,
 				18BC92CA17C0DE80006F82DB /* AppDelegate.h */,
 				18BC92CB17C0DE80006F82DB /* AppDelegate.m */,
 				18BC92D317C0DE80006F82DB /* MainStoryboard_iPhone.storyboard */,
@@ -259,12 +242,6 @@
 			mainGroup = 18BC92AF17C0DE80006F82DB;
 			productRefGroup = 18BC92B917C0DE80006F82DB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 180CA86617C0F25300459DBF /* Products */;
-					ProjectRef = 180CA86517C0F25300459DBF /* PushNotificationManager.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				18BC92B717C0DE80006F82DB /* EmergencyRoom */,
@@ -272,16 +249,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		180CA86A17C0F25400459DBF /* libPushNotificationManager.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPushNotificationManager.a;
-			remoteRef = 180CA86917C0F25400459DBF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18BC92B617C0DE80006F82DB /* Resources */ = {

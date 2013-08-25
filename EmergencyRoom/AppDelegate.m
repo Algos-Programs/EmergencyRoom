@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PushNotificationManager.h"
+#import "push-notifications-sdk-master/SDK/iPhone-ARC/Classes/PushNotificationManager.h"
 
 @implementation AppDelegate
 
@@ -44,4 +44,7 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void) onPushAccepted:(PushNotificationManager *)pushManager withNotification:(NSDictionary *)pushNotification {
+    NSLog(@"Push notification received");
+}
 @end
